@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Gallery with Lightbox</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/Style.css" />
+</head>
+<body>
+
+  <!-- Gallery Banner with Quote -->
+  <div class="gallery-banner position-relative text-white text-center">
+    <img src="images/Gallerybanner.jpg" alt="Gallery Banner" class="img-fluid w-100 banner-img" />
+    <div class="banner-text position-absolute top-50 start-50 translate-middle">
+      <h2 class="fw-bold">"Creativity is intelligence having fun."</h2>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="marginbox py-5">
+    <div class="container">
+      <div class="main text-center">
+        <h2 class="heading mb-3">Our School Gallery</h2>
+        <div class="description mb-4">
+          <p class="lead">
+            Explore the vibrant and creative moments from our school life. From annual functions to art exhibitions,
+            each snapshot captures the energy and joy of our students.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6">
+          <a href="images/gallery.jpg" data-lightbox="gallery" data-title="Annual Day Celebration">
+            <img src="images/gallery.jpg" alt="Annual Day Celebration" class="gallery-img shadow img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="images/gallery.jpg" data-lightbox="gallery" data-title="Science Exhibition">
+            <img src="images/gallery.jpg" alt="Science Exhibition" class="gallery-img shadow img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="images/gallery.jpg" data-lightbox="gallery" data-title="Art Workshop">
+            <img src="images/gallery.jpg" alt="Art Workshop" class="gallery-img shadow img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="images/gallery.jpg" data-lightbox="gallery" data-title="Sports Day Event">
+            <img src="images/gallery.jpg" alt="Sports Day Event" class="gallery-img shadow img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="images/gallery.jpg" data-lightbox="gallery" data-title="Cultural Program">
+            <img src="images/gallery.jpg" alt="Cultural Program" class="gallery-img shadow img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="images/gallery.jpg" data-lightbox="gallery" data-title="Farewell Party">
+            <img src="images/gallery.jpg" alt="Farewell Party" class="gallery-img shadow img-fluid rounded">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p>
+        &copy; <span id="currentYear"></span> <strong>Seyfert Infotech</strong> - School Website. All Rights Reserved.
+      </p>
+      <small>Designed and Developed by Anjali</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+
+  <!-- JS to set the current year -->
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
