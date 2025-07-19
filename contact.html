@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Master Header -->
+  <div id="header"></div>
+
+  <!-- Banner -->
+  <div class="gallery-banner position-relative text-white text-center">
+    <img src="images/Gallerybanner.jpg" alt="Gallery Banner" class="img-fluid w-100 banner-img" />
+    <div class="banner-text position-absolute top-50 start-50 translate-middle">
+      <h2 class="fw-bold">"Creativity is intelligence having fun."</h2>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <section class="marginbox">
+    <div class="container">
+      <div class="main text-center">
+        <div class="description mb-4">
+          <p>We’d love to hear from you! Whether you have a question about features, admissions, or anything else, our team is ready to answer all your questions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <div class="contact-card mt-4 mb-5">
+    <h4 class="mb-4 text-center">CONTACT US</h4>
+    <form action="contact.php" method="POST" class="mx-auto" style="max-width:600px;">
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="bthncolor w-100">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Master Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="includes.js"></script>
+</body>
+</html>
