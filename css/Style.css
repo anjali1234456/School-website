@@ -321,6 +321,21 @@ h6 { font-size: 19px; }
   background-color: #368732;
 }
 
+.about-section h2 {
+  color: #2c3e50;
+}
+
+.about-section h4 {
+  color: #1abc9c;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+
 
 
 /* Responsive */
